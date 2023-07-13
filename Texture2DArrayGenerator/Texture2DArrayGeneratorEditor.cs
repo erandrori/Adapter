@@ -17,17 +17,17 @@ public class Texture2DArrayGeneratorEditor : EditorWindow
 
     #region Method
 
-    [MenuItem("Custom/Texture2DArrayGenerator")]
+    [MenuItem("Eran/Texture/Texture2DArrayGenerator")]
     static void Init()
     {
-        EditorWindow.GetWindow<Texture2DArrayGeneratorEditor>(typeof(Texture2DArrayGenerator).Name); 
+        EditorWindow.GetWindow<Texture2DArrayGeneratorEditor>(typeof(Texture2DArrayGenerator).Name);
     }
 
     protected void OnGUI()
     {
         GUIStyle marginStyle = GUI.skin.label;
-                 marginStyle.wordWrap = true;
-                 marginStyle.margin   = new RectOffset(5, 5, 5, 5);
+        marginStyle.wordWrap = true;
+        marginStyle.margin = new RectOffset(5, 5, 5, 5);
 
         if (GUILayout.Button("Generate"))
         {
